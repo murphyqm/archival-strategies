@@ -2,6 +2,8 @@ project:
   type: website
 
 website:
+  repo-url: https://github.com/murphyqm/archival-strategies
+  repo-actions: [edit, source, issue]
   title: "Building Sustainable Open-Source Dashboards"
   navbar:
     logo: "logo.png"
@@ -10,6 +12,8 @@ website:
       - href: index.qmd
         text: Home
       - href: list.qmd
+      - href: https://github.com/murphyqm/archival-strategies
+        text: GitHub Repository
 
 format:
   html:
