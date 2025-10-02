@@ -327,7 +327,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#onboarding-and-mentorship" id="toc-onboarding-and-mentorship" class="nav-link" data-scroll-target="#onboarding-and-mentorship">Onboarding and mentorship</a></li>
   <li><a href="#sustainability-planning" id="toc-sustainability-planning" class="nav-link" data-scroll-target="#sustainability-planning">Sustainability planning</a></li>
   </ul></li>
-  <li><a href="#think-outside-the-box" id="toc-think-outside-the-box" class="nav-link" data-scroll-target="#think-outside-the-box">3. Think outside the box</a></li>
+  <li><a href="#build-cheaply" id="toc-build-cheaply" class="nav-link" data-scroll-target="#build-cheaply">3. Build cheaply</a>
+  <ul class="collapse">
+  <li><a href="#static-web-apps" id="toc-static-web-apps" class="nav-link" data-scroll-target="#static-web-apps">Static Web Apps</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  </ul></li>
+  <li><a href="#think-outside-the-box" id="toc-think-outside-the-box" class="nav-link" data-scroll-target="#think-outside-the-box">4. Think outside the box</a>
+  <ul class="collapse">
+  <li><a href="#pythonr-in-the-browser" id="toc-pythonr-in-the-browser" class="nav-link" data-scroll-target="#pythonr-in-the-browser">Python/R in the Browser</a></li>
+  </ul></li>
+  <li><a href="#other-interesting-linksresources" id="toc-other-interesting-linksresources" class="nav-link" data-scroll-target="#other-interesting-linksresources">Other interesting links/resources</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -381,6 +390,11 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Collaboration, documentation, and community</li>
 <li>Software stewardship</li>
+</ul></li>
+<li>Building cheaply
+<ul>
+<li>Choosing affordable options from day one</li>
+<li>Minimizing costs where possible</li>
 </ul></li>
 <li>Think outside the box
 <ul>
@@ -749,8 +763,92 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
+<section id="build-cheaply" class="level2">
+<h2 class="anchored" data-anchor-id="build-cheaply">3. Build cheaply</h2>
+<section id="static-web-apps" class="level3 card">
+<h3 class="anchored" data-anchor-id="static-web-apps">Static Web Apps</h3>
+<ul>
+<li>Do you need a server to support your webapp or can you build it as a static site, leveraging JavaScript etc.?</li>
+<li>Can go purely HTML, JS, etc.
+<ul>
+<li>So many resources available</li>
+<li>Great libraries available: <a href="https://leafletjs.com/index.html">Leaflet.js</a>, <a href="https://observablehq.com/documentation/cells/observable-javascript">Observable</a></li>
+</ul></li>
+<li>Or can stick with R and Python via <a href="https://quarto.org/">Quarto</a></li>
+</ul>
+<section id="resources-12" class="level4">
+<h4 class="anchored" data-anchor-id="resources-12">Resources</h4>
+<ul>
+<li><a href="https://quarto.org/">Quarto</a></li>
+<li><a href="https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/">Introduction to HTML, CSS and JS</a></li>
+</ul>
+</section>
+<section id="related-13" class="level4">
+<h4 class="anchored" data-anchor-id="related-13">Related</h4>
+<ul>
+<li><a href="#quarto">Quarto</a></li>
+</ul>
+</section>
+</section>
+<section id="quarto" class="level3 card">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<ul>
+<li>An incredible, Open-Source tool</li>
+<li>Easy to use for Python and R users</li>
+<li>Create static pages that can be served via GitHub pages</li>
+<li>Can use various interactive plotting Python and R libraries
+<ul>
+<li><a href="https://quarto.org/docs/interactive/">Quarto interactivity docs</a></li>
+</ul></li>
+</ul>
+<section id="resources-13" class="level4">
+<h4 class="anchored" data-anchor-id="resources-13">Resources</h4>
+<ul>
+<li><a href="https://murphyqm.github.io/better-basic-dashboards">Basic dashboards in Quarto</a>: introducing simple ways to plot interactive maps and basic dashboards</li>
+<li><a href="https://quarto.org/docs/interactive/">Quarto interactivity docs</a></li>
+</ul>
+</section>
+<section id="related-14" class="level4">
+<h4 class="anchored" data-anchor-id="related-14">Related</h4>
+<ul>
+<li><a href="#static-web-apps">Static Web Apps</a></li>
+<li><a href="#github">GitHub</a></li>
+</ul>
+</section>
+</section>
+</section>
 <section id="think-outside-the-box" class="level2">
-<h2 class="anchored" data-anchor-id="think-outside-the-box">3. Think outside the box</h2>
+<h2 class="anchored" data-anchor-id="think-outside-the-box">4. Think outside the box</h2>
+<section id="pythonr-in-the-browser" class="level3 card">
+<h3 class="anchored" data-anchor-id="pythonr-in-the-browser">Python/R in the Browser</h3>
+<ul>
+<li>Instead of setting up a server to run Python, can we make it run in the user’s browser?</li>
+<li><a href="https://r-wasm.github.io/quarto-live/">Quarto live</a> is one option
+<ul>
+<li>Integrated with Quarto, so again can be set up to run in GitHub pages</li>
+<li>Allows the users to interact with and see the code directly</li>
+<li>Great educational resource</li>
+</ul></li>
+<li><a href="https://github.com/voila-dashboards/voici">Voici</a>: turn Jupyter notebooks into static web applications
+<ul>
+<li><a href="https://voici.readthedocs.io/en/latest/_static/lite/voici/tree/index.html">Example Voici dashboard</a></li>
+</ul></li>
+</ul>
+<section id="related-15" class="level4">
+<h4 class="anchored" data-anchor-id="related-15">Related</h4>
+<ul>
+<li><a href="#quarto">Quarto</a></li>
+<li><a href="#static-web-apps">Static Web Apps</a></li>
+<li><a href="#github">GitHub</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="other-interesting-linksresources" class="level2">
+<h2 class="anchored" data-anchor-id="other-interesting-linksresources">Other interesting links/resources</h2>
+<ul>
+<li><a href="https://marimo.io/">Marimo notebooks</a>: Jupyter alternative</li>
+</ul>
 
 
 </section>
