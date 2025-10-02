@@ -18,7 +18,14 @@
     "href": "index.html#workshop-content",
     "title": "Building Sustainable Open-Source Dashboards",
     "section": "Workshop content",
-    "text": "Workshop content\nI’ve create a brief introductory presentation, and then we’ll get into discussing the various options and ideas I’ve added to the resources list. You can provide feedback/suggestions/ideas via the GitHub discussions (requires a GitHub account), or via the VeVox Q&A (doesn’t require registering/an account).\nHopefully, we’ll be able to add to this document over time and build a resource for researchers looking for strategies around sustaining dashbaords"
+    "text": "Workshop content\nI’ve create a brief introductory presentation, and then we’ll get into discussing the various options and ideas I’ve added to the resources list. You can provide feedback/suggestions/ideas via the GitHub discussions (requires a GitHub account), or via the VeVox Q&A (doesn’t require registering/an account).\nHopefully, we’ll be able to add to this document over time and build a resource for researchers looking for strategies around sustaining dashboards. See our contribution guide in the repository ReadMe file."
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "Building Sustainable Open-Source Dashboards",
+    "section": "Slides",
+    "text": "Slides\n\nPDF slides\nPowerPoint slides (direct download)"
   },
   {
     "objectID": "list.html#build-to-last",
