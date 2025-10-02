@@ -1,0 +1,22 @@
+---
+title: "Building Sustainable Open-Source Dashboards"
+subtitle: "Archival Strategies for Long-Term Access"
+---
+
+This workshop teaches sustainable open-source dashboard development using free tools with a focus on long-term archival strategies. Participants learn about accessible, maintainable dashboards that survive project funding cycles through proper documentation, containerisation, and community-driven maintenance approaches, ensuring content remains available beyond initial development periods.
+
+The workshop will highlight different tools and strategies, and will include group discussions, and the development of a shared resource for future reference. Hopefully this workshop will generate new ideas and workflows for the community to use!
+
+## Table of contents
+
+1. Introduction - what's the problem?
+2. Leveraging sustainable software development workflows
+3. Community and collaboration
+4. Getting creative
+5. When should be stop supporting a dashboard?
+
+## Workshop content
+
+I've create a brief introductory presentation, and then we'll get into discussing the various options and ideas I've added to the [resources list](list.qmd). You can provide feedback/suggestions/ideas via the GitHub discussions (requires a GitHub account), or via the VeVox Q&A (doesn't require registering/an account).
+
+Hopefully, we'll be able to add to this document over time and build a resource for researchers looking for strategies around sustaining dashbaords

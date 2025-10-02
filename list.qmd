@@ -1,0 +1,367 @@
+---
+title: "Resource List"
+subtitle: "Ideas, links, tools, etc. for long-term access to research dashboards"
+---
+
+<style>
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+</style>
+
+# Useful tools
+
+This page contains a list of hopefully useful tools grouped together under the following headings:
+
+1. Build to last
+    - Sustainable software development practices
+    - Using the FAIR approach
+    - Leveraging version control, environments, and containerisation
+2. Build together
+    - Collaboration, documentation, and community
+    - Software stewardship
+3. Think outside the box
+    - Creative solutions
+    - DIY approaches
+
+Use the contents to the right or search with Ctrl + f for different topics. 
+
+## 1. Build to last
+
+Take approaches used generally in sustainable research software development to make projects more robust.
+
+:::{.card}
+
+### Version Control Systems, git
+
+- Records all changes to the project, time stamped, with a unique identifier
+    - A record of who changed what, and when
+- Makes the build process open to allow for replication and reproduction of the work
+- Allows people to "reverse engineer" the work
+- More powerful when in a public repository, like on [GitHub](#github)
+
+#### Resources
+
+- [FAIR Software: use a publicly accessible repository with version control](https://fair-software.nl/recommendations/repository)
+- [Version Control: your digital lab notebook (an introduction to git)](https://arctraining.github.io/research-software-development/version_control/version_control.html)
+
+
+#### Related
+
+- [GitHub](#github)
+
+:::
+
+:::{.card}
+
+### GitHub
+
+The resources listed below are free at time of writing, with usage limits.
+
+- Public repository with git version control, for long-term accessibility
+- Automated CI/CD workflows via GitHub Actions for testing, building, and deploying dashboards - can automatically update data, run tests, and deploy to hosting platforms
+- Free static website hosting directly from repositories - ideal for hosting documentation, simple dashboards, or project websites
+- Cloud-based development environments (via Codespaces) that allow contributors to work on projects without local setup, lowering barriers to collaboration
+- Release tagging: integrations with Zenodo for minting DOIs against releases
+
+#### Resources
+
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [GitHub Actions for Continuous Integration](https://docs.github.com/en/actions)
+- [Building Communities with GitHub Discussions](https://docs.github.com/en/discussions)
+
+#### Related
+
+- [Version Control Systems, git](#version-control-systems-git)
+
+::: 
+
+
+:::{.card}
+
+### Dependency management
+
+- Lock specific versions of packages and dependencies to ensure dashboards work consistently across different machines and time periods
+- Create isolated environments to prevent conflicts between different projects 
+- Modern tools support Windows, macOS, and Linux, making collaboration easier across diverse teams
+- Tools like pixi provide fast environment setup, reducing barriers for new contributors
+- Automatic resolution of complex dependency trees prevents version conflicts that could break dashboards over time
+- Share exact environment specifications through small configuration files rather than large binary packages
+- Tools like miniforge prioritize packages commonly used in research and data science workflows
+
+#### Resources
+
+- [Miniforge - Minimal conda installer](https://github.com/conda-forge/miniforge)
+- [Pixi - Fast package management](https://pixi.sh/)
+- [Conda-forge - Community-driven conda packages](https://conda-forge.org/)
+
+#### Related
+
+- [Containerisation](#containerisation)
+- [Version Control Systems, git](#version-control-systems-git)
+
+:::
+
+:::{.card}
+
+### Containerisation
+
+- Package entire dashboard applications with all dependencies into portable containers that run consistently across different systems
+- Isolate dashboards from host system changes, protecting against software updates that might break functionality
+- Enable easy deployment to cloud platforms, university servers, or personal computers without complex setup procedures
+- Preserve exact runtime environments for long-term reproducibility - containers can be archived and run years later
+- Support automated deployment pipelines that can rebuild and redeploy dashboards from source code
+
+#### Resources
+
+- [Docker Hub - Container registry](https://hub.docker.com)
+- [Docker Desktop - Local container development](https://www.docker.com/products/docker-desktop/)
+- [Podman - Daemonless container engine](https://podman.io/)
+
+#### Related
+
+- [Dependency management](#dependency-management)
+- [GitHub](#github)
+
+:::
+
+
+:::{.card}
+
+### Dev Containers
+
+- Define complete development environments as code using Docker containers with pre-configured tools, extensions, and dependencies
+- Enable instant collaboration by allowing anyone to open your dashboard project in a fully configured environment via GitHub Codespaces
+- Ensure consistent development experience across different operating systems and machines, eliminating "works on my machine" problems
+- Automatically install required VS Code extensions, language servers, and debugging tools when contributors open the project
+- Support both local development (with Docker Desktop) and cloud-based development (with GitHub Codespaces) using the same configuration
+- Reduce onboarding time for new contributors from hours to minutes by providing ready-to-use development environments
+- Allow testing and development of dashboards without installing software locally, particularly useful for workshops and teaching
+
+#### Resources
+
+- [Development Containers specification](https://containers.dev/)
+- [VS Code Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [GitHub Codespaces documentation](https://docs.github.com/en/codespaces)
+
+#### Related
+
+- [Containerisation](#containerisation)
+- [GitHub](#github)
+
+:::
+
+:::{.card}
+
+### Example Dev Container app
+
+See this [example Dev Container with a Dash app](https://github.com/murphyqm/example-dashboard-devcontainers)
+
+- Very basic/minimal set up to show how you can let users build the app themselves/serve it in the cloud
+
+#### Related
+
+- [Containerisation](#containerisation)
+- [GitHub](#github)
+
+
+:::
+
+:::{.card}
+
+### Releases and DOI minting
+
+- Create tagged releases at key project milestones to capture stable snapshots of your dashboard code and documentation
+- Mint Digital Object Identifiers (DOIs) through Zenodo integration to create permanent, citable references to specific versions
+- Ensure long-term preservation through Zenodo's commitment to maintain archived software beyond individual project lifecycles  
+- Enable reproducible research by allowing others to cite and access exact versions of dashboards used in publications
+- Automatically trigger DOI creation when GitHub releases are published, reducing manual administrative overhead
+- Include release notes that document significant changes, bug fixes, and compatibility requirements for each version
+- Archive not just source code but also documentation, example data, and configuration files needed for reproduction
+
+#### Resources
+
+- [Research Software Development in Python tutorial](https://arctraining.github.io/research-software-development/)
+- [Zenodo-GitHub integration guide](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+- [Making Your Code Citable with Zenodo](https://guides.github.com/activities/citable-code/)
+- [Semantic Versioning guidelines](https://semver.org/)
+
+#### Related
+
+- [GitHub](#github)
+- [Version Control Systems, git](#version-control-systems-git)
+- [Documentation](#documentation)
+
+:::
+
+## 2. Build together
+
+:::{.card}
+
+### Documentation
+
+- Create comprehensive README files that explain what the dashboard does, how to install it, and how to use it
+    - Provide instructions on using [containers/Code Spaces](#dev-containers)
+- Document code with clear comments and docstrings so future maintainers can understand the logic
+- Provide step-by-step setup instructions that work for users with different technical backgrounds
+- Include examples and screenshots to help users understand expected outputs and functionality
+- Maintain changelogs and release notes to help users track updates and breaking changes over time
+- Document data sources, update frequencies, and any manual processes required to keep dashboards current
+- Create contributor guides to help new team members understand development workflows and standards
+
+#### Resources
+
+- [Write the Docs - Documentation guide](https://www.writethedocs.org/guide/)
+- [README template for research software](https://github.com/PurpleBooth/a-good-readme-template)
+- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+
+#### Related
+
+- [Version Control Systems, git](#version-control-systems-git)
+- [GitHub](#github)
+- [Dev Containers](#dev-containers)
+
+:::
+
+:::{.card}
+
+### Licensing
+
+- Choose open source licenses that allow others to use, modify, and distribute your dashboard code freely
+- Ensure license compatibility when using third-party libraries and datasets in your project
+- Include clear license files in your repository to establish legal permissions for long-term use
+- Consider data licensing separately from code licensing, especially for research datasets with different restrictions
+- Use permissive licenses like MIT or Apache 2.0 to maximise accessibility and adoption by other researchers
+- Document any trademark or attribution requirements for logos, branding, or institutional acknowledgements
+- Understand institutional policies around intellectual property and open source software release
+
+#### Resources
+
+- [Choose a License - Simple license picker](https://choosealicense.com/)
+- [Open Source Initiative - License list](https://opensource.org/licenses)
+- [Creative Commons - Data and content licensing](https://creativecommons.org/licenses/)
+
+#### Related
+
+- [GitHub](#github)
+- [Documentation](#documentation)
+
+:::
+
+:::{.card}
+
+### Community management
+
+- Use GitHub Issues to track bugs, feature requests, and general discussions about dashboard improvements
+- Create issue templates that guide users to provide helpful information when reporting problems or suggesting features
+- Set up GitHub Discussions for broader conversations about dashboard usage, best practices, and community questions
+- Establish clear communication channels (mailing lists, Slack, Discord) where community members can ask for help and share experiences
+- Recognise contributors through acknowledgements in documentation, contributor lists, and release notes
+- Create governance documents that outline decision-making processes and community standards
+- Host regular community calls or meetings to discuss roadmap priorities and gather feedback
+- **Be aware of recorded gender-based hostility and uninclusive environment in OS**
+    - [Gender differences and bias in open source: pull request acceptance of women versus men (Terrell et al., 2017)](https://peerj.com/articles/cs-111/)
+        - *Our results show that women’s pull requests tend to be accepted more often than men’s, yet women’s acceptance rates are higher only when they are not identifiable as women. In the context of existing theories of gender in the workplace, plausible explanations include the presence of gender bias in open source, survivorship and self-selection bias, and women being held to higher performance standards.*
+    - [Discrimination, misogyny and harassment: Examples from OSS: content analysis of women-focused online discussion forums (Singh & Brandon, 2022)](https://dl.acm.org/doi/10.1145/3524501.3527602)
+        - *Open Source Software (OSS) communities are notorious for discrimination and hostility towards women and currently, only 2--3 percent of OSS developers are women.*
+
+#### Resources
+
+- [GitHub Community Standards](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions)
+- [Open Source Guides - Building Welcoming Communities](https://opensource.guide/building-community/)
+- [CHAOSS Community Health Metrics](https://chaoss.community/)
+
+#### Related
+
+- [GitHub](#github)
+- [Documentation](#documentation)
+
+:::
+
+
+:::{.card}
+
+### Code review and collaboration
+
+- Implement pull request workflows that require code review before changes are merged to maintain quality
+- Use branch protection rules to prevent direct commits to main branches and ensure all changes go through review
+- Set up automated checks (linting, testing, security scans) that run on every pull request
+- Create clear contribution guidelines that explain coding standards, testing requirements, and review processes
+- Use draft pull requests for early feedback on work-in-progress features and major changes
+- Encourage pair programming and collaborative development sessions to share knowledge across the team
+- Maintain a welcoming tone in code reviews that focuses on improving code rather than criticising contributors
+
+#### Resources
+
+- [GitHub Pull Request best practices](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)
+- [Code Review Guidelines](https://google.github.io/eng-practices/review/)
+- [Contributing to Open Source Projects](https://opensource.guide/how-to-contribute/)
+
+#### Related
+
+- [GitHub](#github)
+- [Testing](#testing)
+- [Documentation](#documentation)
+
+:::
+
+:::{.card}
+
+### Onboarding and mentorship
+
+- Create "good first issue" labels to help new contributors find approachable tasks to start with
+- Develop step-by-step onboarding guides that walk newcomers through setting up development environments
+- Pair experienced contributors with newcomers as mentors for their first few contributions
+- Host coding workshops, hackathons, or sprint events to bring community members together
+- Record video tutorials showing how to contribute to different parts of the dashboard project
+- Maintain up-to-date contributor documentation that explains project structure and development workflows
+- Celebrate first-time contributors publicly to encourage continued participation
+
+
+#### Resources
+
+- [First Timers Only - Friendly OSS community](https://www.firsttimersonly.com/)
+- [Mozilla's Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
+- [Open Source Mentorship Programs](https://opensource.com/article/19/2/open-source-mentoring)
+
+#### Related
+
+- [Documentation](#documentation)
+- [Dev Containers](#dev-containers)
+- [Community management](#community-management)
+
+:::
+
+:::{.card}
+
+### Sustainability planning
+
+- Develop succession plans that identify key roles and knowledge areas that need continuity
+- Create detailed handover documentation for critical maintenance tasks and decision-making processes
+- Establish funding strategies for long-term hosting, domain names, and infrastructure costs
+- Build relationships with institutional partners who can provide ongoing support or hosting
+- Document dependencies on external services and create contingency plans if they become unavailable
+- Train multiple community members in essential skills like deployment, data updates, and troubleshooting
+- Consider transferring projects to established organisations or foundations for long-term stewardship
+
+#### Resources
+
+- [Sustaining Open Source Software](https://sustainoss.org/)
+- [Software Sustainability Institute](https://www.software.ac.uk/)
+- [FAIR4RS Principles](https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg)
+
+#### Related
+
+- [Documentation](#documentation)
+- [Community management](#community-management)
+- [Releases and DOI minting](#releases-and-doi-minting)
+
+:::
+
+## 3. Think outside the box
+

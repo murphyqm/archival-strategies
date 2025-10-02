@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Building Sustainable Open-Source Dashboards"
+  navbar:
+    logo: "logo.png"
+    logo-alt: "Logo, with a cartoon blue cloud with electronic circuits"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: list.qmd
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    toc: true
+    include-in-header: header.html
+    include-before-body: main.html
+
+highlight-style: a11y
+
