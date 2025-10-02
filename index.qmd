@@ -19,4 +19,9 @@ The workshop will highlight different tools and strategies, and will include gro
 
 I've create a brief introductory presentation, and then we'll get into discussing the various options and ideas I've added to the [resources list](list.qmd). You can provide feedback/suggestions/ideas via the GitHub discussions (requires a GitHub account), or via the VeVox Q&A (doesn't require registering/an account).
 
-Hopefully, we'll be able to add to this document over time and build a resource for researchers looking for strategies around sustaining dashbaords
+Hopefully, we'll be able to add to this document over time and build a resource for researchers looking for strategies around sustaining dashboards. See our contribution guide in the [repository ReadMe file](README.md).
+
+## Slides
+
+- [PDF slides](archival_webapps.pdf)
+- [PowerPoint slides (direct download)](archival_webapps.pptx)
