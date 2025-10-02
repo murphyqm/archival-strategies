@@ -438,3 +438,9 @@ See this [example Dev Container with a Dash app](https://github.com/murphyqm/exa
 ## Other interesting links/resources
 
 - [Marimo notebooks](https://marimo.io/): Jupyter alternative
+
+### Publications
+
+- Hoffenson, Steven, Cory Philippe, Zuting Chen, Christian Barrientos, Zhongyuan Yu, Brian Chell, and Mark Blackburn. 2023. “Graphical Features of Interactive Dashboards Have Little Influence on Engineering Students Performing a Design Task.” International Journal of Human-Computer Studies 180 (103121): 103121.
+- Rossi, Fernanda S., Meredith C. B. Adams, Gregory Aarons, and Mark P. McGovern. 2025. “From Glitter to Gold: Recommendations for Effective Dashboards from Design through Sustainment.” Implementation Science: IS 20 (1): 16.
+- Wu, Elwin, Jennifer Villani, Alissa Davis, Naleef Fareed, Daniel R. Harris, Timothy R. Huerta, Marc R. LaRochelle, Cortney C. Miller, and Emmanuel A. Oga. 2020. “Community Dashboards to Support Data-Informed Decision-Making in the HEALing Communities Study.” Drug and Alcohol Dependence 217 (108331): 108331.
