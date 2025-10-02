@@ -25,7 +25,10 @@ This page contains a list of hopefully useful tools grouped together under the f
 2. Build together
     - Collaboration, documentation, and community
     - Software stewardship
-3. Think outside the box
+3. Building cheaply
+    - Choosing affordable options from day one
+    - Minimizing costs where possible
+4. Think outside the box
     - Creative solutions
     - DIY approaches
 
@@ -363,5 +366,75 @@ See this [example Dev Container with a Dash app](https://github.com/murphyqm/exa
 
 :::
 
-## 3. Think outside the box
+## 3. Build cheaply
 
+:::{.card}
+
+### Static Web Apps
+
+- Do you need a server to support your webapp or can you build it as a static site, leveraging JavaScript etc.?
+- Can go purely HTML, JS, etc.
+    - So many resources available
+    - Great libraries available: [Leaflet.js](https://leafletjs.com/index.html), [Observable](https://observablehq.com/documentation/cells/observable-javascript) 
+- Or can stick with R and Python via [Quarto](https://quarto.org/)
+
+#### Resources
+
+- [Quarto](https://quarto.org/)
+- [Introduction to HTML, CSS and JS](https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/)
+
+#### Related
+
+- [Quarto](#quarto)
+
+:::
+
+:::{.card}
+
+### Quarto
+
+- An incredible, Open-Source tool
+- Easy to use for Python and R users
+- Create static pages that can be served via GitHub pages
+- Can use various interactive plotting Python and R libraries
+    - [Quarto interactivity docs](https://quarto.org/docs/interactive/)
+
+
+#### Resources
+
+- [Basic dashboards in Quarto](https://murphyqm.github.io/better-basic-dashboards): introducing simple ways to plot interactive maps and basic dashboards
+- [Quarto interactivity docs](https://quarto.org/docs/interactive/)
+
+#### Related
+
+- [Static Web Apps](#static-web-apps)
+- [GitHub](#github)
+
+:::
+
+
+## 4. Think outside the box
+
+:::{.card}
+
+### Python/R in the Browser
+
+- Instead of setting up a server to run Python, can we make it run in the user's browser?
+- [Quarto live](https://r-wasm.github.io/quarto-live/) is one option
+    - Integrated with Quarto, so again can be set up to run in GitHub pages
+    - Allows the users to interact with and see the code directly
+    - Great educational resource
+- [Voici](https://github.com/voila-dashboards/voici): turn Jupyter notebooks into static web applications
+    - [Example Voici dashboard](https://voici.readthedocs.io/en/latest/_static/lite/voici/tree/index.html)
+
+#### Related
+
+- [Quarto](#quarto)
+- [Static Web Apps](#static-web-apps)
+- [GitHub](#github)
+
+:::
+
+## Other interesting links/resources
+
+- [Marimo notebooks](https://marimo.io/): Jupyter alternative
